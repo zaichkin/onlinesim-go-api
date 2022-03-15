@@ -79,7 +79,7 @@ type State struct {
 	Service  string      `json:"service"`
 	Country  int         `json:"country"`
 	Response interface{} `json:"response"`
-	Sum      int         `json:"sum,omitempty"`
+	Sum      float64     `json:"sum,omitempty"`
 }
 
 func (c *GetNumbers) State(message_to_code int, orderby Order) (error, StateResponse) {
